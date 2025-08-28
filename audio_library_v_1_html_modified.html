@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Law Office of Hong‑min Jun — Audio Library</title>
+  <meta name="description" content="Audio Library — practical immigration insights and client guides by Attorney Hong‑min Jun (Indiana). Listen in Korean, English, and Chinese." />
+  <style>
+    :root {
+      --bg: #f7f9fb;
+      --card: #ffffff;
+      --ink: #0f172a;
+      --muted: #6b7280;
+      --line: #e5e7eb;
+      --brand: #0ea5e9; /* sky-500 */
+      --brand-ink: #075985;
+      --accent: #10b981; /* emerald */
+      --warn: #f59e0b; /* amber */
+      --radius: 14px;
+      --shadow: 0 8px 24px rgba(2, 6, 23, 0.06);
+    }
+    html, body { height: 100%; }
+    body { margin: 0; background: var(--bg); color: var(--ink); font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; }
+    .wrap { max-width: 1120px; margin: 0 auto; padding: 24px; }
+
+    /* Hero */
+    .hero { background: linear-gradient(180deg, #e0f2fe, #f8fafc); border: 1px solid var(--line); border-radius: var(--radius); padding: 28px; box-shadow: var(--shadow); }
+    .hero h1 { margin: 0 0 8px; font-size: clamp(22px, 3.2vw, 34px); letter-spacing: -0.02em; }
+    .hero p { margin: 0; color: var(--muted); font-size: clamp(14px, 2.4vw, 16px); }
+
+    /* Controls */
+    .controls { display: grid; gap: 12px; grid-template-columns: 1fr; margin: 18px 0 6px; align-items: center; }
+    .tabs { display: flex; gap: 8px; flex-wrap: wrap; }
+    .tab { appearance: none; border: 1px solid var(--line); background: #fff; color: var(--ink); padding: 8px 12px; border-radius: 999px; cursor: pointer; font-size: 14px; }
+    .tab.active { background: var(--brand); color: #fff; border-color: var(--brand); }
+    .search { display: flex; align-items: center; gap: 10px; padding: 10px 14px; background: #fff; border: 1px solid var(--line); border-radius: 999px; }
+    .search input { border: 0; outline: 0; width: 100%; font-size: 15px; }
+
+    /* Grid */
+    .grid { display: grid; gap: 16px; grid-template-columns: repeat(1, minmax(0, 1fr)); margin-top: 12px; }
+    @media (min-width: 640px) { .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+    @media (min-width: 980px) { .grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+
+    .card { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px; box-shadow: var(--shadow); display: flex; flex-direction: column; gap: 12px; }
+    .title { font-weight: 700; font-size: 16px; line-height: 1.35; }
+    .meta { display: flex; flex-wrap: wrap; gap: 8px; font-size: 12px; color: var(--muted); }
+    .badge { display: inline-flex; align-items: center; gap: 6px; border: 1px solid var(--line); padding: 4px 8px; border-radius: 999px; font-size: 12px; background: #fff; }
+    .badge.ko { border-color: #f2c3c3; background: #fff5f5; }
+    .badge.en { border-color: #c3e4f9; background: #ecfeff; }
+    .badge.zh { border-color: #c9f2d0; background: #f0fff4; }
+    .tags { display: flex; gap: 6px; flex-wrap: wrap; }
+    .tag { background: #f1f5f9; color: #334155; padding: 2px 8px; border-radius: 999px; font-size: 12px; border: 1px solid var(--line); }
+    audio { width: 100%; }
+
+    .cta-bar { margin-top: 20px; display: grid; gap: 10px; grid-template-columns: 1fr; }
+    @media (min-width: 680px) { .cta-bar { grid-template-columns: 1fr 1fr; } }
+    .btn { display: inline-flex; justify-content: center; align-items: center; gap: 8px; text-decoration: none; padding: 12px 14px; border-radius: 12px; border: 1px solid var(--line); font-weight: 600; }
+    .btn.primary { background: var(--accent); color: #fff; border-color: var(--accent); }
+    .btn.secondary { background: #fff; color: var(--brand-ink); border-color: var(--brand); }
+
+    /* Footer note */
+    .note { color: var(--muted); font-size: 13px; margin-top: 20px; }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero" aria-label="Audio Library Hero">
+      <h1>Audio Library</h1>
+      <p>Concise legal insights and NIW guidance by Attorney Hong‑min Jun. Click play and listen instantly.</p>
+    </section>
+
+    <section class="controls" aria-label="Filters and search">
+      <nav class="tabs" aria-label="Language filter">
+        <button class="tab active" data-filter="all" aria-pressed="true">All</button>
+        <button class="tab" data-filter="ko">Korean</button>
+        <button class="tab" data-filter="en">English</button>
+        <button class="tab" data-filter="zh">Chinese</button>
+      </nav>
+      <div class="search" role="search">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 21l-4.3-4.3M10.5 18a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15z" stroke="#64748b" stroke-width="1.8" stroke-linecap="round"/></svg>
+        <input id="search" type="search" placeholder="Search topics (e.g., NIW, Artist, Personal Injury)" aria-label="Search audio" />
+      </div>
+    </section>
+
+    <section class="grid" id="grid" aria-label="Audio list">
+      <!-- Card 1 (KO) -->
+      <article class="card" data-lang="ko" data-text="niw artist self assessment korean ko 예술가 자가진단 eb2 niw" itemscope itemtype="https://schema.org/AudioObject">
+        <div class="meta">
+          <span class="badge ko" title="Language">KO</span>
+          <span class="badge" title="Length">⏱ 04:12</span>
+          <span class="badge" title="Published">2025‑08‑15</span>
+        </div>
+        <h2 class="title" itemprop="name">예술가 NIW 자가진단 — 핵심 체크 5가지</h2>
+        <p itemprop="description" class="desc">예술가의 EB‑2 NIW 준비를 위한 빠른 체크리스트와 서류 구성 요령.</p>
+        <audio controls preload="none" itemprop="contentUrl">
+          <source src="/media/audio/niw-artist-checklist-ko.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+        <div class="tags" aria-label="Tags">
+          <span class="tag">NIW</span>
+          <span class="tag">Artists</span>
+          <span class="tag">Korean</span>
+        </div>
+      </article>
+
+      <!-- Card 2 (EN) -->
+      <article class="card" data-lang="en" data-text="eb2 niw overview english en immigration attorney indiana" itemscope itemtype="https://schema.org/AudioObject">
+        <div class="meta">
+          <span class="badge en" title="Language">EN</span>
+          <span class="badge" title="Length">⏱ 05:06</span>
+          <span class="badge" title="Published">2025‑08‑12</span>
+        </div>
+        <h2 class="title" itemprop="name">EB‑2 NIW Overview — What USCIS Really Looks For</h2>
+        <p itemprop="description" class="desc">Merits determination, evidence themes, and pitfalls to avoid.</p>
+        <audio controls preload="none" itemprop="contentUrl">
+          <source src="/media/audio/eb2-niw-overview-en.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+        <div class="tags" aria-label="Tags">
+          <span class="tag">NIW</span>
+          <span class="tag">EB‑2</span>
+          <span class="tag">English</span>
+        </div>
+      </article>
+
+      <!-- Card 3 (ZH) -->
+      <article class="card" data-lang="zh" data-text="traffic accident contingency fee chinese zh 印第安纳 人身伤害 代理费 说明" itemscope itemtype="https://schema.org/AudioObject">
+        <div class="meta">
+          <span class="badge zh" title="Language">ZH</span>
+          <span class="badge" title="Length">⏱ 03:28</span>
+          <span class="badge" title="Published">2025‑08‑08</span>
+        </div>
+        <h2 class="title" itemprop="name">印第安纳交通事故索赔与代理费简介</h2>
+        <p itemprop="description" class="desc">人身伤害案件的收费方式与和解流程，避免常见误区的小贴士。</p>
+        <audio controls preload="none" itemprop="contentUrl">
+          <source src="/media/audio/personal-injury-cn.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+        <div class="tags" aria-label="Tags">
+          <span class="tag">Personal Injury</span>
+          <span class="tag">Chinese</span>
+        </div>
+      </article>
+    
+
+<!-- Added on 2025-08-28: New language audio cards -->
+<!-- Card (EN) -->
+<article class="card" data-lang="en" data-text="new citizenship application naturalization n-400 english indiana" itemscope itemtype="https://schema.org/AudioObject">
+  <div class="meta">
+    <span class="badge en" title="Language">EN</span>
+    <span class="badge" title="Length">⏱ 03:00</span>
+    <span class="badge" title="Published">2025-08-28</span>
+  </div>
+  <h2 class="title" itemprop="name">New Citizenship Application</h2>
+  <p itemprop="description" class="desc">What to prepare for a stronger N-400 filing—residence, travel, taxes, records, and interview tips.</p>
+  <audio controls preload="none" itemprop="contentUrl">
+    <source src="/media/audio/new-citizenship-en.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+  </audio>
+  <div class="tags" aria-label="Tags">
+    <span class="tag">Citizenship</span>
+    <span class="tag">English</span>
+  </div>
+</article>
+
+<!-- Card (KO) -->
+<article class="card" data-lang="ko" data-text="시민권 심사 강화 n-400 체류 세금 기록 인터뷰 korean ko" itemscope itemtype="https://schema.org/AudioObject">
+  <div class="meta">
+    <span class="badge ko" title="Language">KO</span>
+    <span class="badge" title="Length">⏱ 03:00</span>
+    <span class="badge" title="Published">2025-08-28</span>
+  </div>
+  <h2 class="title" itemprop="name">시민권 심사 강화</h2>
+  <p itemprop="description" class="desc">DHS 지침 이후 강화된 심사 포인트와 준비 체크리스트—체류·출입국·세금·기록·인터뷰 대비.</p>
+  <audio controls preload="none" itemprop="contentUrl">
+    <source src="/media/audio/new-citizenship-ko.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+  </audio>
+  <div class="tags" aria-label="Tags">
+    <span class="tag">Citizenship</span>
+    <span class="tag">Korean</span>
+  </div>
+</article>
+
+<!-- Card (ZH) -->
+<article class="card" data-lang="zh" data-text="加強公民身份審查 入籍 n-400 稅務 記錄 面試 chinese zh" itemscope itemtype="https://schema.org/AudioObject">
+  <div class="meta">
+    <span class="badge zh" title="Language">ZH</span>
+    <span class="badge" title="Length">⏱ 03:00</span>
+    <span class="badge" title="Published">2025-08-28</span>
+  </div>
+  <h2 class="title" itemprop="name">加強公民身份審查</h2>
+  <p itemprop="description" class="desc">在 DHS 新指引下，更嚴格的審查要點與準備清單：居留、出入境、稅務、記錄與面試。</p>
+  <audio controls preload="none" itemprop="contentUrl">
+    <source src="/media/audio/new-citizenship-zh.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+  </audio>
+  <div class="tags" aria-label="Tags">
+    <span class="tag">Citizenship</span>
+    <span class="tag">Chinese</span>
+  </div>
+</article>
+</section>
+
+    <section class="cta-bar" aria-label="Calls to action">
+      <a class="btn primary" href="/forms/niw-self-assessment" target="_self" rel="noopener">NIW Self‑Assessment</a>
+      <a class="btn secondary" href="/contact" target="_self" rel="noopener">Book a Consultation</a>
+      <p class="note">Tip: In your newsletter, link your Play button to this page with UTM parameters (e.g., <code>?utm_source=newsletter&utm_medium=email&utm_campaign=audio_aug</code>) to measure traffic.</p>
+    </section>
+  </main>
+
+  <script>
+    // Simple filtering (language tabs + text search)
+    (function() {
+      const tabs = document.querySelectorAll('.tab');
+      const search = document.getElementById('search');
+      const cards = Array.from(document.querySelectorAll('.card'));
+      const audios = Array.from(document.querySelectorAll('audio'));
+      let active = 'all';
+
+      function apply() {
+        const q = (search.value || '').trim().toLowerCase();
+        cards.forEach(card => {
+          const lang = card.dataset.lang;
+          const text = (card.dataset.text || '').toLowerCase();
+          const showLang = active === 'all' || active === lang;
+          const showText = !q || text.includes(q);
+          card.style.display = (showLang && showText) ? '' : 'none';
+        });
+      }
+
+      tabs.forEach(btn => {
+        btn.addEventListener('click', () => {
+          tabs.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          active = btn.dataset.filter;
+          apply();
+        });
+      });
+
+      search.addEventListener('input', apply);
+      apply();
+
+      // Pause other audios when one starts playing
+      audios.forEach(a => {
+        a.addEventListener('play', () => {
+          audios.forEach(other => { if (other !== a) other.pause(); });
+        });
+      });
+    })();
+  </script>
+
+  <!--
+  ==========================
+  HOW TO USE / CUSTOMIZE
+  ==========================
+  1) Replace each <source src="/media/audio/...mp3"> with your actual MP3 URLs.
+  2) Duplicate an <article class="card"> block to add more audio. Update:
+     - data-lang (ko|en|zh),
+     - data-text (keywords for search),
+     - badges (length, publish date),
+     - <h2> title, <p> description,
+     - tags.
+  3) Keep preload="none" for faster initial load.
+  4) For SEO, keep the JSON-LD below updated or manage per detail pages later.
+  5) If you later add a dedicated detail page per audio, link the title to it.
+  -->
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "itemListElement": [
+      {
+        "@type": "AudioObject",
+        "name": "예술가 NIW 자가진단 — 핵심 체크 5가지",
+        "inLanguage": "ko",
+        "duration": "PT4M12S",
+        "uploadDate": "2025-08-15",
+        "contentUrl": "/media/audio/niw-artist-checklist-ko.mp3"
+      },
+      {
+        "@type": "AudioObject",
+        "name": "EB‑2 NIW Overview — What USCIS Really Looks For",
+        "inLanguage": "en",
+        "duration": "PT5M6S",
+        "uploadDate": "2025-08-12",
+        "contentUrl": "/media/audio/eb2-niw-overview-en.mp3"
+      },
+      {
+        "@type": "AudioObject",
+        "name": "印第安纳交通事故索赔与代理费简介",
+        "inLanguage": "zh",
+        "duration": "PT3M28S",
+        "uploadDate": "2025-08-08",
+        "contentUrl": "/media/audio/personal-injury-cn.mp3"
+      }
+    ]
+  }
+  </script>
+</body>
+</html>
